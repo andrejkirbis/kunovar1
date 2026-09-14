@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VM Kunovar — kamnoseški izdelki | Naravni in tehnični kamen, Ljubljana</title>
+<meta name="description" content="Kamnoseštvo družine Kunovar iz Ljubljane. Naravni in tehnični kamen za interier in eksterier: pulti, obloge, stopnice, nagrobniki. Silestone.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .hero-inner{z-index:2}
+  .hero-reference-banner{
+    position:relative;
+    z-index:2;
+    width:100vw;
+    margin-top:6.2rem;
+    margin-left:calc(50% - 50vw);
+    overflow:hidden;
+    border-block:1px solid rgba(255,255,255,.14);
+    background:rgba(27,26,22,.26);
+    pointer-events:none;
+  }
+  .hero-reference-track{
+    display:flex;
+    width:max-content;
+    animation:hero-reference-scroll 34s linear infinite;
+  }
+  .hero-reference-list{
+    display:flex;
+    align-items:center;
+    gap:clamp(2.2rem,5vw,4.8rem);
+    padding:.85rem clamp(1.5rem,4vw,3rem);
+    font-family:var(--serif);
+    font-size:clamp(1.02rem,1.8vw,1.38rem);
+    font-style:italic;
+    font-weight:300;
+    color:rgba(240,233,220,.72);
+    white-space:nowrap;
+  }
+  .hero-reference-list span{display:inline-flex;align-items:center;gap:clamp(2.2rem,5vw,4.8rem)}
+  .hero-reference-list span::after{
+    content:"";
+    width:7px;
+    height:7px;
+    flex:0 0 7px;
+    background:#c9b79a;
+    transform:rotate(45deg);
+    opacity:.78;
+  }
+  @keyframes hero-reference-scroll{
+    from{transform:translateX(0)}
+    to{transform:translateX(-50%)}
+  }
+  @media(max-width:620px){
+    .hero-reference-banner{margin-top:4.2rem}
+    .hero-reference-list{font-size:.98rem;padding-block:.7rem}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .hero-reference-track{animation:none;transform:translateX(0)}
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-top">Predogled · <b>Neuraden predlog</b> spletne strani · ni uradna stran podjetja VM Kunovar</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html"><b>KUNOVAR</b><span>Kamnoseštvo · Ljubljana</span></a>
+    <nav class="nav" id="nav">
+      <a class="active" href="index.html">Domov</a>
+      <a href="izdelki.html">Izdelki</a>
+      <a href="naravni-kamen.html">Naravni kamen</a>
+      <a href="tehnicni-kamen.html">Tehnični kamen</a>
+      <a href="galerija.html">Galerija</a>
+      <a href="o-nas.html">O nas</a>
+      <a class="nav-cta" href="kontakt.html">Kontakt</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Meni" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image:url('images/marmor-blackgold.jpg')"></div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow reveal">Kamnoseški izdelki · Družina Kunovar · Ljubljana</p>
+      <div class="hero-mark reveal">KUNOVAR<small>Naravni in tehnični kamen</small></div>
+      <p class="hero-sub reveal">S kamnoseštvom se v družini Kunovar ukvarjamo že od začetka prejšnjega stoletja — kamen za interier in eksterier, izdelan z natančnostjo in tradicijo.</p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="kontakt.html">Pošljite povpraševanje</a>
+        <a class="btn btn-line" href="izdelki.html">Naša ponudba</a>
+      </div>
+      <div class="hero-meta reveal">
+        <div><b>Družinska tradicija</b><br>od začetka prejšnjega stoletja</div>
+        <div><b>Naravni in tehnični kamen</b><br>za dom, vilo in javni prostor</div>
+        <div><b>Silestone</b><br>kvarčne delovne površine</div>
+      </div>
+      <div class="hero-reference-banner" aria-label="Izbrane reference">
+        <div class="hero-reference-track">
+          <div class="hero-reference-list">
+            <span>Slovenska filharmonija</span>
+            <span>Hotel Cubo</span>
+            <span>ŠRC Tivoli</span>
+            <span>NLB</span>
+            <span>Deželna banka Slovenije</span>
+            <span>Razstavni salon Mercedes-Benz</span>
+            <span>Plečnikova cvetličarna Žale</span>
+            <span>Vile v Portorožu</span>
+          </div>
+          <div class="hero-reference-list" aria-hidden="true">
+            <span>Slovenska filharmonija</span>
+            <span>Hotel Cubo</span>
+            <span>ŠRC Tivoli</span>
+            <span>NLB</span>
+            <span>Deželna banka Slovenije</span>
+            <span>Razstavni salon Mercedes-Benz</span>
+            <span>Plečnikova cvetličarna Žale</span>
+            <span>Vile v Portorožu</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO / VALUES -->
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="rule"></div>
+        <p class="eyebrow">Kdo smo</p>
+        <h2 class="section-title">Kamnoseška obrt, ki iz roda v rod<br>ostaja med vodilnimi</h2>
+        <p class="lead" style="margin-top:1.4rem">Skozi desetletja delovanja in ob sodelovanju s priznanimi kiparji in arhitekti smo bili vedno med vodilnimi v svoji dejavnosti.</p>
+      </div>
+      <div class="values">
+        <div class="value reveal"><span class="no">01</span><h3>Družinska tradicija</h3><p>Kamnoseštvo se v družini Kunovar prenaša iz roda v rod. V sedanji obliki podjetje VM Kunovar deluje od leta 1994.</p></div>
+        <div class="value reveal"><span class="no">02</span><h3>Znanje in natančnost</h3><p>Sodelovanje s priznanimi kiparji in arhitekti nas je uvrstilo med najbolj iskane in napredne v bližnji in daljni okolici.</p></div>
+        <div class="value reveal"><span class="no">03</span><h3>Naravni in tehnični kamen</h3><p>Od domačega in tujega naravnega kamna do kvarčnih površin Silestone — za interier in eksterier.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE: naravni kamen -->
+  <section class="band band-dark">
+    <div class="wrap split">
+      <div class="txt reveal">
+        <div class="rule"></div>
+        <p class="eyebrow">Naravni kamen</p>
+        <h2 class="section-title">Marmor, granit, oniks<br>in kvarcit</h2>
+        <p style="margin-top:1.2rem">Obdelujemo širok nabor naravnega kamna domačega in tujega izvora. Vsaka kamnina nosi svojo barvo, trdoto in teksturo — od belega marmorja do dramatičnega oniksa.</p>
+        <a class="btn btn-line" style="margin-top:1.8rem;color:#efe7d7;border-color:rgba(255,255,255,.5)" href="naravni-kamen.html">Spoznajte materiale</a>
+      </div>
+      <div class="media reveal" style="overflow:hidden;border:1px solid var(--line-dark)">
+        <img src="images/onyx-ametista.jpg" alt="Oniks — naravni kamen" style="width:100%;height:100%;min-height:360px;object-fit:cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIALS TEASER -->
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="rule"></div>
+        <p class="eyebrow">Iz naše zbirke</p>
+        <h2 class="section-title">Izbrani materiali</h2>
+      </div>
+      <div class="tile-grid reveal">
+        <a class="tile" href="naravni-kamen.html"><img src="images/marmor-carrara.jpg" alt="Beli marmor"><div class="cap"><b>Beli marmor</b><span>Marmorji</span></div></a>
+        <a class="tile" href="naravni-kamen.html"><img src="images/granit-azulbahia.jpg" alt="Modri granit"><div class="cap"><b>Granit</b><span>Graniti</span></div></a>
+        <a class="tile" href="naravni-kamen.html"><img src="images/kvarcit-fantasybrown.jpg" alt="Kvarcit"><div class="cap"><b>Kvarcit</b><span>Kvarciti</span></div></a>
+        <a class="tile" href="tehnicni-kamen.html"><img src="images/silestone-blancozeus.jpg" alt="Silestone"><div class="cap"><b>Silestone</b><span>Tehnični kamen</span></div></a>
+      </div>
+      <p style="margin-top:1.6rem"><a class="btn btn-line" href="galerija.html">Oglejte si galerijo</a></p>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section class="band band-soft">
+    <div class="wrap">
+      <div class="sec-head reveal" style="max-width:820px">
+        <div class="rule"></div>
+        <p class="eyebrow">Reference</p>
+        <h2 class="section-title">Zaupali so nam</h2>
+        <p class="lead" style="margin-top:1.4rem">Delno ali v celoti smo izvedli kamnoseška dela na vrsti javnih in zasebnih objektov po Sloveniji.</p>
+      </div>
+      <div class="logos reveal">
+        <span>Slovenska filharmonija</span><span>Hotel Cubo</span><span>ŠRC Tivoli</span><span>NLB</span><span>Deželna banka Slovenije</span><span>Mercedes-Benz salon</span><span>Plečnikova cvetličarna Žale</span><span>VDC Cerknica</span><span>Vile v Portorožu</span>
+      </div>
+      <p style="margin-top:1.8rem"><a class="btn btn-line" href="o-nas.html">Vse reference</a></p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="band band-dark" style="text-align:center">
+    <div class="wrap">
+      <div class="reveal" style="max-width:640px;margin-inline:auto">
+        <p class="eyebrow" style="color:#d6b985">Povpraševanje</p>
+        <h2 class="section-title" style="margin:.8rem 0 1.2rem">Kar zamislite v kamnu,<br>izdelamo</h2>
+        <p style="margin-bottom:2rem">Opišite svojo idejo, načrt ali skico — svetujemo pri izbiri materiala in pripravimo ponudbo.</p>
+        <a class="btn btn-primary" href="kontakt.html">Stopite v stik z nami</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div><b class="fbrand">KUNOVAR</b><p>VM Kunovar, kamnoseški izdelki d.o.o. — kamnoseška tradicija družine Kunovar. Naravni in tehnični kamen za interier in eksterier.</p></div>
+    <div class="fcol"><h4>Kazalo</h4><a href="izdelki.html">Izdelki in storitve</a><a href="naravni-kamen.html">Naravni kamen</a><a href="tehnicni-kamen.html">Tehnični kamen</a><a href="galerija.html">Galerija</a><a href="o-nas.html">O nas</a></div>
+    <div class="fcol"><h4>Kontakt</h4><a href="tel:+38614379800">+386 1 437 98 00</a><a href="mailto:info@vmkunovar.si">info@vmkunovar.si</a><span>Na Žalah 3, 1000 Ljubljana</span></div>
+  </div>
+  <div class="wrap footer-bottom"><span>© VM Kunovar, kamnoseški izdelki d.o.o. · Predstavitveni predlog</span><a href="index.html">Na vrh ↑</a></div>
+</footer>
+
+<script>
+(function(){
+  var t=document.getElementById('navToggle'),n=document.getElementById('nav');
+  if(t){t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false');});n.addEventListener('click',function(e){if(e.target.closest('a')){n.classList.remove('open');t.setAttribute('aria-expanded','false');}});}
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver'in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(function(e){e.classList.add('vis');});}
+  else{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('vis');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e);});}
+  var f=document.getElementById('form');
+  if(f){f.addEventListener('submit',function(e){e.preventDefault();var note=document.getElementById('note');note.textContent='To je predstavitvena stran — obrazec ni aktiven in ne pošilja podatkov.';});}
+})();
+</script>
+</body>
+</html>
