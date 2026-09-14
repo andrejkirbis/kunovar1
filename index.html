@@ -48,6 +48,39 @@
     transform:rotate(45deg);
     opacity:.78;
   }
+  .section-reference-banner{
+    width:100vw;
+    margin-left:calc(50% - 50vw);
+    overflow:hidden;
+    border-block:1px solid rgba(35,32,25,.12);
+    background:rgba(255,255,255,.28);
+  }
+  .section-reference-track{
+    display:flex;
+    width:max-content;
+    animation:hero-reference-scroll 34s linear infinite;
+  }
+  .section-reference-list{
+    display:flex;
+    align-items:center;
+    gap:clamp(2.2rem,5vw,4.8rem);
+    padding:1rem clamp(1.5rem,4vw,3rem);
+    font-family:var(--serif);
+    font-size:clamp(1.08rem,1.65vw,1.36rem);
+    font-weight:500;
+    color:rgba(35,32,25,.62);
+    white-space:nowrap;
+  }
+  .section-reference-list span{display:inline-flex;align-items:center;gap:clamp(2.2rem,5vw,4.8rem)}
+  .section-reference-list span::after{
+    content:"";
+    width:7px;
+    height:7px;
+    flex:0 0 7px;
+    background:var(--brass);
+    transform:rotate(45deg);
+    opacity:.75;
+  }
   @keyframes hero-reference-scroll{
     from{transform:translateX(0)}
     to{transform:translateX(-50%)}
@@ -55,9 +88,10 @@
   @media(max-width:620px){
     .hero-reference-banner{margin-top:4.2rem}
     .hero-reference-list{font-size:.98rem;padding-block:.7rem}
+    .section-reference-list{font-size:1rem;padding-block:.8rem}
   }
   @media(prefers-reduced-motion:reduce){
-    .hero-reference-track{animation:none;transform:translateX(0)}
+    .hero-reference-track,.section-reference-track{animation:none;transform:translateX(0)}
   }
 </style>
 </head>
@@ -185,8 +219,31 @@
         <h2 class="section-title">Zaupali so nam</h2>
         <p class="lead" style="margin-top:1.4rem">Delno ali v celoti smo izvedli kamnoseška dela na vrsti javnih in zasebnih objektov po Sloveniji.</p>
       </div>
-      <div class="logos reveal">
-        <span>Slovenska filharmonija</span><span>Hotel Cubo</span><span>ŠRC Tivoli</span><span>NLB</span><span>Deželna banka Slovenije</span><span>Mercedes-Benz salon</span><span>Plečnikova cvetličarna Žale</span><span>VDC Cerknica</span><span>Vile v Portorožu</span>
+      <div class="section-reference-banner reveal" aria-label="Reference">
+        <div class="section-reference-track">
+          <div class="section-reference-list">
+            <span>Slovenska filharmonija</span>
+            <span>Hotel Cubo</span>
+            <span>ŠRC Tivoli</span>
+            <span>NLB</span>
+            <span>Deželna banka Slovenije</span>
+            <span>Mercedes-Benz salon</span>
+            <span>Plečnikova cvetličarna Žale</span>
+            <span>VDC Cerknica</span>
+            <span>Vile v Portorožu</span>
+          </div>
+          <div class="section-reference-list" aria-hidden="true">
+            <span>Slovenska filharmonija</span>
+            <span>Hotel Cubo</span>
+            <span>ŠRC Tivoli</span>
+            <span>NLB</span>
+            <span>Deželna banka Slovenije</span>
+            <span>Mercedes-Benz salon</span>
+            <span>Plečnikova cvetličarna Žale</span>
+            <span>VDC Cerknica</span>
+            <span>Vile v Portorožu</span>
+          </div>
+        </div>
       </div>
       <p style="margin-top:1.8rem"><a class="btn btn-line" href="o-nas.html">Vse reference</a></p>
     </div>
